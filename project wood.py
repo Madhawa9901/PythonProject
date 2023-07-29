@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("C:\\Users\\Madhawa\\Desktop\\work\\python\\Project\\image1.jpg",1)
+img = cv2.imread("C:\\Users\\Madhawa\\Desktop\\work\\python\\Project\\image27.jpg",1)
 green = cv2.imread("C:\\Users\\Madhawa\\Desktop\\work\\python\\Project\\green1.jpg",1)
 image = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
