@@ -13,7 +13,7 @@ sharp1 = cv2.addWeighted(image,2,gus1,-1,0)
 gus2 = cv2.GaussianBlur(image,(19,19),0)
 
 mask = cv2.subtract(image,gus2)
-
+opening = cv2.morphologyEx(mask,cv2.MORPH_CLOSE,kernal)
 #mask = cv2.medianBlur(mask,5)
 height, width = mask.shape
 green = cv2.resize(cv2.cvtColor(green,cv2.COLOR_BGR2RGB),(width,height))
